@@ -66,7 +66,7 @@ function handleClick(event) {
 }
 
 function checkWinner() {
-    for (let combo of winningCombinations) {
+     for (let combo of winningCombinations) {
         let [a, b, c] = combo;
 
         if (
@@ -74,6 +74,10 @@ function checkWinner() {
             boardState[a] === boardState[b] &&
             boardState[a] === boardState[c]
         ) {
+            document.getElementById(a + 1).style.backgroundColor = "purple";
+            document.getElementById(b + 1).style.backgroundColor = "purple";
+            document.getElementById(c + 1).style.backgroundColor = "purple";
+
             return true;
         }
     }
