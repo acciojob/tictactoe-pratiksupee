@@ -54,7 +54,7 @@ function handleClick(event) {
 
     if (checkWinner()) {
         let winner = currentPlayer === "X" ? player1 : player2;
-        message.innerText = `${winner} congratulations you won!`;
+        message.innerText = `${winner}, congratulations you won!`;
         gameActive = false;
         return;
     }
