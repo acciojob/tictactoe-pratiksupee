@@ -40,7 +40,7 @@ cells.forEach(cell => {
         cell.innerText = symbol;
 
         if (checkWin()) {
-            messageDiv.innerText = `${currentPlayer}, congratulations you won!`;
+            messageDiv.innerText = `${currentPlayer} congratulations you won!`;
             gameActive = false;
             highlightWinner();
         } else if (!boardState.includes("")) {
